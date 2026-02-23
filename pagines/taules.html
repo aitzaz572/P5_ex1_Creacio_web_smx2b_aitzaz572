@@ -1,0 +1,102 @@
+<!DOCTYPE html> <!-- 
+!DOCTYPE = indica al navegador que este documento es HTML5
+<! = inicio de declaración especial
+DOCTYPE = tipo de documento
+html = lenguaje de marcado
+--> 
+
+<html lang="ca"> <!-- 
+<html> = etiqueta raíz que contiene toda la página
+lang="ca" = atributo que indica el idioma de la página (ca = catalán)
+-->
+
+<head> <!-- 
+<head> = cabecera de la página, contiene título, metadatos y enlaces a CSS/JS
+-->
+
+  <meta charset="UTF-8"> <!-- 
+  <meta> = metadatos de la página
+  charset="UTF-8" = codificación de caracteres, permite tildes y símbolos
+  -->
+
+  <title>Taules - Portal Web</title> <!-- 
+  <title> = título visible en la pestaña del navegador
+  Taules - Portal Web = texto que verá el usuario
+  -->
+
+</head> <!-- cierre de cabecera -->
+
+<body> <!-- 
+<body> = cuerpo visible de la página, aquí va todo lo que se muestra al usuario
+-->
+
+  <!-- Menú de navegación -->
+  <ul> <!-- 
+  <ul> = lista desordenada
+  -->
+    <li><a href="../index.html">Inici</a></li> <!-- 
+      <li> = elemento de lista
+      <a href="../index.html"> = enlace relativo que sube un nivel y apunta a index.html
+      Inici = texto visible
+      </a> = cierre del enlace
+    -->
+    <li><a href="enllacos.html">Enllaços</a></li> <!-- enlace a página de enlaces -->
+    <li><a href="taules.html">Taules</a></li> <!-- enlace a sí misma -->
+    <li><a href="javascript.html">Javascript</a></li> <!-- enlace a página JS -->
+  </ul> <!-- cierre de lista -->
+
+  <h1>Exemple de Taula</h1> <!-- 
+  <h1> = título principal
+  Exemple de Taula = texto visible
+  </h1> = cierre de encabezado
+  -->
+
+  <!-- Tabla de ejemplo -->
+  <table border="1"> <!-- 
+  <table> = tabla
+  border="1" = atributo que define el grosor del borde (1 píxel)
+  -->
+    <thead> <!-- 
+    <thead> = sección de cabecera de la tabla
+    -->
+      <tr> <!-- 
+      <tr> = fila de la tabla
+      -->
+        <th>Nom</th> <!-- 
+        <th> = celda de encabezado de columna
+        Nom = texto visible
+        </th> = cierre de celda de encabezado
+        <th>Edat</th> <!-- celda encabezado edad -->
+        <th>Ciutat</th> <!-- celda encabezado ciudad -->
+      </tr> <!-- cierre fila cabecera -->
+    </thead>
+
+    <tbody> <!-- 
+    <tbody> = cuerpo de la tabla con los datos
+    -->
+      <tr> <!-- fila de datos -->
+        <td>Joan</td> <!-- 
+        <td> = celda de datos
+        Joan = contenido
+        </td> = cierre celda
+        -->
+        <td>25</td> <!-- edad -->
+        <td>Barcelona</td> <!-- ciudad -->
+      </tr>
+
+      <tr>
+        <td>Maria</td>
+        <td>30</td>
+        <td>Girona</td>
+      </tr>
+
+      <tr>
+        <td>Pere</td>
+        <td>28</td>
+        <td>Lleida</td>
+      </tr>
+    </tbody>
+  </table> <!-- cierre de tabla -->
+
+</body> <!-- cierre del cuerpo -->
+</html> <!-- cierre de documento -->

@@ -1,0 +1,101 @@
+<!DOCTYPE html> <!-- 
+!DOCTYPE = indica al navegador que este documento es HTML5
+<! = inicio de declaración especial
+DOCTYPE = tipo de documento
+html = lenguaje de marcado
+--> 
+
+<html lang="ca"> <!-- 
+<html> = etiqueta raíz que contiene toda la página
+lang="ca" = atributo que indica el idioma de la página (ca = catalán)
+-->
+
+<head> <!-- 
+<head> = cabecera de la página, contiene título, metadatos y enlaces a CSS/JS
+-->
+
+  <meta charset="UTF-8"> <!-- 
+  <meta> = metadatos de la página, no se muestran
+  charset="UTF-8" = define la codificación de caracteres, permite acentos y símbolos
+  -->
+
+  <title>Enllaços - Portal Web</title> <!-- 
+  <title> = título que aparece en la pestaña del navegador
+  Enllaços - Portal Web = texto que verá el usuario en la pestaña
+  -->
+
+</head> <!-- cierre de cabecera -->
+
+<body> <!-- 
+<body> = cuerpo visible de la página, aquí va todo lo que se muestra al usuario
+-->
+
+  <!-- Menú de navegación -->
+  <ul> <!-- 
+  <ul> = unordered list = lista desordenada, contiene elementos <li>
+  -->
+    <li> <!-- 
+    <li> = list item = elemento de la lista
+    -->
+      <a href="../index.html">Inici</a> <!-- 
+      <a> = anchor = enlace
+      href="../index.html" = ruta relativa, sube un nivel y apunta a index.html
+      Inici = texto visible del enlace
+      </a> = cierre del enlace
+      -->
+    </li> <!-- cierre del elemento de lista -->
+
+    <li>
+      <a href="enllacos.html">Enllaços</a> <!-- 
+      href="enllacos.html" = ruta relativa, apunta a sí mismo (actual página)
+      Enllaços = texto visible
+      -->
+    </li>
+
+    <li>
+      <a href="taules.html">Taules</a> <!-- 
+      href="taules.html" = apunta a la página de tablas
+      Taules = texto visible
+      -->
+    </li>
+
+    <li>
+      <a href="javascript.html">Javascript</a> <!-- 
+      href="javascript.html" = apunta a la página con JS
+      Javascript = texto visible
+      -->
+    </li>
+  </ul> <!-- cierre de la lista -->
+
+  <h1>Exemple d'Enllaços</h1> <!-- 
+  <h1> = heading 1 = título principal
+  Exemple d'Enllaços = texto que se muestra como título
+  </h1> = cierre del encabezado
+  -->
+
+  <!-- Enlaces internos dentro de la página -->
+  <p>Enllaços interns: <a href="#paragraf1">Ancla al paràgraf 1</a></p> <!-- 
+  <p> = párrafo
+  Enllaços interns: = texto dentro del párrafo
+  <a href="#paragraf1"> = enlace interno, apunta a id="paragraf1" en esta página
+  Ancla al paràgraf 1 = texto visible del enlace
+  </a> = cierre del enlace
+  </p> = cierre del párrafo
+  -->
+
+  <!-- Enlaces externos -->
+  <p>Enllaços externs: <a href="https://www.google.com">Google</a></p> <!-- 
+  href="https://www.google.com" = URL completa a otra página externa
+  Google = texto visible
+  -->
+
+  <!-- Párrafo con id para enlace interno -->
+  <p id="paragraf1">Paràgraf amb ancla 1</p> <!-- 
+  <p> = párrafo
+  id="paragraf1" = identificador único para usar como ancla interna
+  Paràgraf amb ancla 1 = texto que se muestra
+  </p> = cierre del párrafo
+  -->
+
+</body> <!-- cierre del cuerpo -->
+</html> <!-- cierre del documento -->
